@@ -7,6 +7,7 @@ License:	GPL
 Vendor:		The GNUstep Project
 Group:		X11/Applications
 Source0:	ftp://ftp.gnustep.org/pub/gnustep/core/%{name}-%{version}.tar.gz
+# Source0-md5:	61809c02a84e286a057d16c1648e8942
 Patch0:		%{name}-paths.patch
 URL:		http://www.gnustep.org/
 BuildRequires:	gnustep-gui-devel
