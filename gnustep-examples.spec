@@ -2,13 +2,14 @@ Summary:	GNUstep examples
 Summary(pl):	Przyk³ady do GNUstepa
 Name:		gnustep-examples
 Version:	0.9.7
-Release:	2
+Release:	3
 License:	GPL
 Vendor:		The GNUstep Project
 Group:		X11/Applications
 Source0:	ftp://ftp.gnustep.org/pub/gnustep/core/%{name}-%{version}.tar.gz
 # Source0-md5:	61809c02a84e286a057d16c1648e8942
 Patch0:		%{name}-paths.patch
+Patch1:		%{name}-pass-arguments.patch
 URL:		http://www.gnustep.org/
 BuildRequires:	gnustep-gui-devel
 Requires:	gnustep-back
@@ -36,7 +37,8 @@ bardzo stara, czê¶æ nowsza; niektóre s± uaktualnione, inne nie.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
 . %{_prefix}/System/Makefiles/GNUstep.sh
