@@ -42,6 +42,7 @@ bardzo stara, czê¶æ nowsza; niektóre s± uaktualnione, inne nie.
 . %{_prefix}/System/Makefiles/GNUstep.sh
 
 %{__make} \
+	OPTFLAG="%{rpmcflags}" \
 	messages=yes
 
 %install
