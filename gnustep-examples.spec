@@ -2,7 +2,7 @@ Summary:	GNUstep examples
 Summary(pl):	Przyk³ady do GNUstepa
 Name:		gnustep-examples
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	GPL
 Vendor:		The GNUstep Project
 Group:		X11/Applications
