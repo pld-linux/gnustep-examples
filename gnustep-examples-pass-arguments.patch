@@ -40,14 +40,13 @@ diff -ur gnustep-examples-0.9.7-orig/gui/CurrencyConverter/CurrencyConverter.m g
  {
     NSAutoreleasePool *pool;
     NSApplication *app;
-@@ -241,6 +245,11 @@
+@@ -241,6 +245,10 @@
     CurrencyConverter *converter;
     int i;
  
 +#ifdef GS_PASS_ARGUMENTS
 +	[NSProcessInfo initializeWithArguments: argv count: argc environment: environ];
 +#endif
-+
 +
     // We need to explicitly create this object only in the main function;     
     // instead, while the app is running, the gui library creates these objects
@@ -80,7 +79,6 @@ diff -ur gnustep-examples-0.9.7-orig/gui/Finger/main.m gnustep-examples-0.9.7/gu
     pool = [NSAutoreleasePool new];
     app = [NSApplication sharedApplication];
  
-Only in gnustep-examples-0.9.7/gui/Finger: main.m~
 diff -ur gnustep-examples-0.9.7-orig/gui/GFractal/main.m gnustep-examples-0.9.7/gui/GFractal/main.m
 --- gnustep-examples-0.9.7-orig/gui/GFractal/main.m	2002-05-17 11:27:16.000000000 -0600
 +++ gnustep-examples-0.9.7/gui/GFractal/main.m	2004-08-20 02:06:58.230784896 -0600
@@ -109,19 +107,10 @@ diff -ur gnustep-examples-0.9.7-orig/gui/GFractal/main.m gnustep-examples-0.9.7/
    pool = [NSAutoreleasePool new];
    app = [NSApplication sharedApplication];
  
-Only in gnustep-examples-0.9.7/gui/GFractal: main.m~
 diff -ur gnustep-examples-0.9.7-orig/gui/GPuzzle/main.m gnustep-examples-0.9.7/gui/GPuzzle/main.m
 --- gnustep-examples-0.9.7-orig/gui/GPuzzle/main.m	2002-05-28 20:37:18.000000000 -0600
 +++ gnustep-examples-0.9.7/gui/GPuzzle/main.m	2004-08-20 02:04:46.090229756 -0600
-@@ -51,6 +51,7 @@
-   NSMenu *services;
-   NSMenu *windows;
- 
-+
-   //	Create the app menu
-   menu = [NSMenu new];
- 
-@@ -179,9 +180,16 @@
+@@ -179,9 +179,16 @@
  
  @end
  
@@ -138,34 +127,6 @@ diff -ur gnustep-examples-0.9.7-orig/gui/GPuzzle/main.m gnustep-examples-0.9.7/g
    [NSApplication sharedApplication];
    [NSApp setDelegate: [MyDelegate new]];
    
-diff -ur gnustep-examples-0.9.7-orig/gui/GSTest/main.m gnustep-examples-0.9.7/gui/GSTest/main.m
---- gnustep-examples-0.9.7-orig/gui/GSTest/main.m	2004-08-20 01:45:30.193575000 -0600
-+++ gnustep-examples-0.9.7/gui/GSTest/main.m	2004-08-20 02:05:30.456036948 -0600
-@@ -200,7 +200,11 @@
- 
- @end
- 
--int main (void)
-+#ifdef GS_PASS_ARGUMENTS
-+extern char **environ;
-+#endif
-+
-+int main (int argc, char **argv)
- { 
-    NSAutoreleasePool *pool;
-    NSApplication *app;
-@@ -212,6 +216,10 @@
-    Controller *appController;
-    int i;
- 
-+#ifdef GS_PASS_ARGUMENTS
-+	[NSProcessInfo initializeWithArguments: argv count: argc environment: environ];
-+#endif
-+
-    pool = [NSAutoreleasePool new];
- 
-    app = [NSApplication sharedApplication];
-Only in gnustep-examples-0.9.7/gui/GSTest: main.m~
 diff -ur gnustep-examples-0.9.7-orig/gui/HostAddress/main.m gnustep-examples-0.9.7/gui/HostAddress/main.m
 --- gnustep-examples-0.9.7-orig/gui/HostAddress/main.m	2002-01-08 11:23:01.000000000 -0700
 +++ gnustep-examples-0.9.7/gui/HostAddress/main.m	2004-08-20 02:04:46.090229756 -0600
