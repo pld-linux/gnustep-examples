@@ -1,15 +1,14 @@
 Summary:	GNUstep examples
 Summary(pl):	Przyk³ady do GNUstepa
 Name:		gnustep-examples
-Version:	0.9.7
-Release:	3
+Version:	1.0.0
+Release:	1
 License:	GPL
 Vendor:		The GNUstep Project
 Group:		X11/Applications
 Source0:	ftp://ftp.gnustep.org/pub/gnustep/core/%{name}-%{version}.tar.gz
-# Source0-md5:	61809c02a84e286a057d16c1648e8942
-Patch0:		%{name}-paths.patch
-Patch1:		%{name}-pass-arguments.patch
+# Source0-md5:	3409eca37e4a2f9f560cc06907a38e67
+Patch0:		%{name}-pass-arguments.patch
 URL:		http://www.gnustep.org/
 BuildRequires:	gnustep-gui-devel
 Requires:	gnustep-back
@@ -38,7 +37,6 @@ bardzo stara, czê¶æ nowsza; niektóre s± uaktualnione, inne nie.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 . %{_prefix}/System/Makefiles/GNUstep.sh
@@ -85,6 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_prefix}/System/Applications/NSScreenTest.app/NSScreenTest
 %attr(755,root,root) %{_prefix}/System/Applications/NSScreenTest.app/%{gscpu}/%{gsos}/%{libcombo}/NSScreenTest
 
-%dir %{_prefix}/System/Library/Bundles/*.bundle
-%{_prefix}/System/Library/Bundles/*.bundle/Resources
-%attr(755,root,root) %{_prefix}/System/Library/Bundles/*.bundle/%{gscpu}
+%dir %{_prefix}/System/Library/ApplicationSupport/GSTest
+%dir %{_prefix}/System/Library/ApplicationSupport/GSTest/*.bundle
+%{_prefix}/System/Library/ApplicationSupport/GSTest/*.bundle/Resources
+%attr(755,root,root) %{_prefix}/System/Library/ApplicationSupport/GSTest/*.bundle/%{gscpu}
