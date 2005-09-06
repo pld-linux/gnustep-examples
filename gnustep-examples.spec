@@ -2,7 +2,7 @@ Summary:	GNUstep examples
 Summary(pl):	Przyk³ady do GNUstepa
 Name:		gnustep-examples
 Version:	1.0.0
-Release:	3
+Release:	4
 License:	GPL
 Vendor:		The GNUstep Project
 Group:		X11/Applications
@@ -39,7 +39,7 @@ bardzo stara, czê¶æ nowsza; niektóre s± uaktualnione, inne nie.
 %patch0 -p1
 
 %build
-. %{_prefix}/System/Makefiles/GNUstep.sh
+. %{_prefix}/System/Library/Makefiles/GNUstep.sh
 
 %{__make} \
 	OPTFLAG="%{rpmcflags}" \
@@ -47,7 +47,7 @@ bardzo stara, czê¶æ nowsza; niektóre s± uaktualnione, inne nie.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-. %{_prefix}/System/Makefiles/GNUstep.sh
+. %{_prefix}/System/Library/Makefiles/GNUstep.sh
 
 %{__make} install \
 	GNUSTEP_INSTALLATION_DIR=$RPM_BUILD_ROOT%{_prefix}/System
