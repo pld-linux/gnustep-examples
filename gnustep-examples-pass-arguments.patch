@@ -107,26 +107,6 @@ diff -ur gnustep-examples-0.9.7-orig/gui/GFractal/main.m gnustep-examples-0.9.7/
    pool = [NSAutoreleasePool new];
    app = [NSApplication sharedApplication];
  
-diff -ur gnustep-examples-0.9.7-orig/gui/GPuzzle/main.m gnustep-examples-0.9.7/gui/GPuzzle/main.m
---- gnustep-examples-0.9.7-orig/gui/GPuzzle/main.m	2002-05-28 20:37:18.000000000 -0600
-+++ gnustep-examples-0.9.7/gui/GPuzzle/main.m	2004-08-20 02:04:46.090229756 -0600
-@@ -179,9 +179,16 @@
- 
- @end
- 
-+#ifdef GS_PASS_ARGUMENTS
-+extern char **environ;
-+#endif
-+
- int
- main(int argc, const char **argv, char** env)
- {
-+#ifdef GS_PASS_ARGUMENTS
-+	[NSProcessInfo initializeWithArguments: argv count: argc environment: environ];
-+#endif
-   [NSApplication sharedApplication];
-   [NSApp setDelegate: [MyDelegate new]];
-   
 diff -ur gnustep-examples-0.9.7-orig/gui/HostAddress/main.m gnustep-examples-0.9.7/gui/HostAddress/main.m
 --- gnustep-examples-0.9.7-orig/gui/HostAddress/main.m	2002-01-08 11:23:01.000000000 -0700
 +++ gnustep-examples-0.9.7/gui/HostAddress/main.m	2004-08-20 02:04:46.090229756 -0600
@@ -148,25 +128,4 @@ diff -ur gnustep-examples-0.9.7-orig/gui/HostAddress/main.m gnustep-examples-0.9
 +
    
    [NSApplication sharedApplication];
- 
-diff -ur gnustep-examples-0.9.7-orig/gui/Ink/main.m gnustep-examples-0.9.7/gui/Ink/main.m
---- gnustep-examples-0.9.7-orig/gui/Ink/main.m	2002-04-06 16:47:08.000000000 -0700
-+++ gnustep-examples-0.9.7/gui/Ink/main.m	2004-08-20 02:04:46.091229616 -0600
-@@ -276,9 +276,17 @@
- 
- @end
- 
-+#ifdef GS_PASS_ARGUMENTS
-+extern char **environ;
-+#endif
-+
- int
- main(int argc, const char **argv, char** env)
- {
-+#ifdef GS_PASS_ARGUMENTS
-+	[NSProcessInfo initializeWithArguments: argv count: argc environment: environ];
-+#endif
-+
-   [NSApplication sharedApplication];
-   [NSApp setDelegate: [MyDelegate new]];
  
