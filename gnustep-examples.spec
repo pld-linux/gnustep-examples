@@ -1,5 +1,5 @@
 Summary:	GNUstep examples
-Summary(pl):	Przyk³ady do GNUstepa
+Summary(pl.UTF-8):   PrzykÅ‚ady do GNUstepa
 Name:		gnustep-examples
 Version:	1.1.0
 Release:	1
@@ -21,9 +21,9 @@ This is a full collection of examples for the GNUstep libraries. Some
 tests are very old, other are newer; some are up-to-date, other are
 not.
 
-%description -l pl
-To jest pe³ny zestaw przyk³adów do bibliotek GNUstep. Czê¶æ jest
-bardzo stara, czê¶æ nowsza; niektóre s± uaktualnione, inne nie.
+%description -l pl.UTF-8
+To jest peÅ‚ny zestaw przykÅ‚adÃ³w do bibliotek GNUstep. CzÄ™Å›Ä‡ jest
+bardzo stara, czÄ™Å›Ä‡ nowsza; niektÃ³re sÄ… uaktualnione, inne nie.
 
 %prep
 %setup -q
