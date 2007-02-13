@@ -1,5 +1,5 @@
 Summary:	GNUstep examples
-Summary(pl.UTF-8):   Przykłady do GNUstepa
+Summary(pl.UTF-8):	Przykłady do GNUstepa
 Name:		gnustep-examples
 Version:	1.1.0
 Release:	1
