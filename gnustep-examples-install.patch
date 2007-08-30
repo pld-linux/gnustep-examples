@@ -1,0 +1,220 @@
+diff -ur gnustep-examples-1.1.0/gui/GSTest/Composite-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/Composite-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/Composite-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/Composite-test/GNUmakefile	2007-08-30 16:51:40.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = Composite-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ Composite-test_OBJC_FILES = Composite-test.m MyView.m
+ Composite-test_PRINCIPAL_CLASS = Composite
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/CoordinateCheck-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/CoordinateCheck-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/CoordinateCheck-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/CoordinateCheck-test/GNUmakefile	2007-08-30 16:51:47.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = CoordinateCheck-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ CoordinateCheck-test_OBJC_FILES = CoordinateCheck-test.m
+ CoordinateCheck-test_PRINCIPAL_CLASS = CoordinateCheckTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/EncodingDecoding-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/EncodingDecoding-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/EncodingDecoding-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/EncodingDecoding-test/GNUmakefile	2007-08-30 16:51:51.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = EncodingDecoding-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ EncodingDecoding-test_OBJC_FILES = EncodingDecoding-test.m
+ EncodingDecoding-test_PRINCIPAL_CLASS = EncodingDecodingTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/GSHbox-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/GSHbox-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/GSHbox-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/GSHbox-test/GNUmakefile	2007-08-30 16:51:55.000000000 +0200
+@@ -29,7 +29,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = GSHbox-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ GSHbox-test_OBJC_FILES = GSHbox-test.m
+ GSHbox-test_PRINCIPAL_CLASS = GSHboxTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/KeyboardInput-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/KeyboardInput-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/KeyboardInput-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/KeyboardInput-test/GNUmakefile	2007-08-30 16:52:02.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = KeyboardInput-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ KeyboardInput-test_OBJC_FILES = KeyboardInput-test.m ConvertKeys.m
+ KeyboardInput-test_PRINCIPAL_CLASS = KeyboardInputTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSBox-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSBox-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSBox-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSBox-test/GNUmakefile	2007-08-30 16:52:08.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSBox-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSBox-test_OBJC_FILES = NSBox-test.m
+ NSBox-test_PRINCIPAL_CLASS = NSBoxTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSButton-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSButton-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSButton-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSButton-test/GNUmakefile	2007-08-30 16:52:12.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSButton-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSButton-test_OBJC_FILES = NSButton-test.m
+ NSButton-test_PRINCIPAL_CLASS = NSButtonTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSColorList-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSColorList-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSColorList-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSColorList-test/GNUmakefile	2007-08-30 16:52:16.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSColorList-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSColorList-test_OBJC_FILES = NSColorList-test.m
+ NSColorList-test_PRINCIPAL_CLASS = NSColorListTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSColorWell-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSColorWell-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSColorWell-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSColorWell-test/GNUmakefile	2007-08-30 16:52:20.000000000 +0200
+@@ -29,7 +29,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSColorWell-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSColorWell-test_OBJC_FILES = NSColorWell-test.m
+ NSColorWell-test_PRINCIPAL_CLASS = NSColorWellTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSForm-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSForm-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSForm-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSForm-test/GNUmakefile	2007-08-30 16:52:25.000000000 +0200
+@@ -29,7 +29,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSForm-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSForm-test_OBJC_FILES = NSForm-test.m
+ NSForm-test_PRINCIPAL_CLASS = NSFormTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSOutlineView-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSOutlineView-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSOutlineView-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSOutlineView-test/GNUmakefile	2007-08-30 16:52:28.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSOutlineView-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSOutlineView-test_OBJC_FILES = NSOutlineView-test.m
+ NSOutlineView-test_PRINCIPAL_CLASS = NSOutlineViewTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSSavePanel-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSSavePanel-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSSavePanel-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSSavePanel-test/GNUmakefile	2007-08-30 16:52:32.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSSavePanel-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSSavePanel-test_OBJC_FILES = NSSavePanel-test.m
+ NSSavePanel-test_PRINCIPAL_CLASS = NSSavePanelTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSScrollView-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSScrollView-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSScrollView-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSScrollView-test/GNUmakefile	2007-08-30 16:52:37.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSScrollView-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSScrollView-test_OBJC_FILES = NSScrollView-test.m
+ NSScrollView-test_PRINCIPAL_CLASS = NSScrollViewTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSSecureTextField-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSSecureTextField-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSSecureTextField-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSSecureTextField-test/GNUmakefile	2007-08-30 16:52:41.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSSecureTextField-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSSecureTextField-test_OBJC_FILES = NSSecureTextField-test.m
+ NSSecureTextField-test_PRINCIPAL_CLASS = NSSecureTextFieldTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSSlider-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSSlider-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSSlider-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSSlider-test/GNUmakefile	2007-08-30 16:52:44.000000000 +0200
+@@ -29,7 +29,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSSlider-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSSlider-test_OBJC_FILES = NSSlider-test.m
+ NSSlider-test_PRINCIPAL_CLASS = NSSliderTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSSplitView-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSSplitView-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSSplitView-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSSplitView-test/GNUmakefile	2007-08-30 16:52:48.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSSplitView-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSSplitView-test_OBJC_FILES = NSSplitView-test.m
+ NSSplitView-test_PRINCIPAL_CLASS = NSSplitViewTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSTableView-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSTableView-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSTableView-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSTableView-test/GNUmakefile	2007-08-30 16:52:52.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSTableView-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSTableView-test_OBJC_FILES = NSTableView-test.m
+ NSTableView-test_PRINCIPAL_CLASS = NSTableViewTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSTextView-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSTextView-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSTextView-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSTextView-test/GNUmakefile	2007-08-30 16:52:56.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSTextView-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSTextView-test_OBJC_FILES = NSTextView-test.m
+ NSTextView-test_PRINCIPAL_CLASS = NSTextViewTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/NSWindowStyleMask-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/NSWindowStyleMask-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/NSWindowStyleMask-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/NSWindowStyleMask-test/GNUmakefile	2007-08-30 16:52:59.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = NSWindowStyleMask-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ NSWindowStyleMask-test_OBJC_FILES = NSWindowStyleMask-test.m
+ NSWindowStyleMask-test_PRINCIPAL_CLASS = NSWindowStyleMaskTest
+ 
+diff -ur gnustep-examples-1.1.0/gui/GSTest/StringDrawing-test/GNUmakefile gnustep-examples-1.1.0-depr/gui/GSTest/StringDrawing-test/GNUmakefile
+--- gnustep-examples-1.1.0/gui/GSTest/StringDrawing-test/GNUmakefile	2004-08-15 05:13:46.000000000 +0200
++++ gnustep-examples-1.1.0-depr/gui/GSTest/StringDrawing-test/GNUmakefile	2007-08-30 16:53:03.000000000 +0200
+@@ -28,7 +28,6 @@
+ # We are creating a bundle
+ #
+ BUNDLE_NAME = StringDrawing-test
+-BUNDLE_INSTALL_DIR = $(GNUSTEP_INSTALLATION_DIR)/Library/ApplicationSupport/GSTest
+ StringDrawing-test_OBJC_FILES = StringDrawing-test.m
+ StringDrawing-test_PRINCIPAL_CLASS = StringDrawingTest
+ 
