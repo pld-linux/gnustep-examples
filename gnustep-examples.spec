@@ -46,6 +46,10 @@ export GNUSTEP_FLATTENED=yes
 	GNUSTEP_INSTALLATION_DOMAIN=SYSTEM \
 	DESTDIR=$RPM_BUILD_ROOT 
 
+for f in Calculator CurrencyConverter GSTest Ink NSBrowserTest NSImageTest NSPanelTest NSScreenTest md5Digest ; do
+	ln -sf %{_libdir}/GNUstep/Applications/$f.app/$f $RPM_BUILD_ROOT/%{_bindir}/$f
+done
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
