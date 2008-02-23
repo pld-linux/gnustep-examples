@@ -2,7 +2,7 @@ Summary:	GNUstep examples
 Summary(pl.UTF-8):	Przykłady do GNUstepa
 Name:		gnustep-examples
 Version:	1.1.0
-Release:	2
+Release:	3
 License:	GPL
 Vendor:		The GNUstep Project
 Group:		X11/Applications
